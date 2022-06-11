@@ -1,0 +1,175 @@
+:root {
+  --primario: #042c2c;
+  --primarioOscuro: #041f1f;
+  
+  --fuentePrincipal: "Lato", sans-serif;
+
+  --blanco: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; 
+}
+
+body {
+  margin: 0;
+  color: var(--blanco);
+  background-color: var(--primario);
+  font-size: 2rem;
+  font-family: var(--fuentePrincipal);
+}
+/* Globales*/
+
+* {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2rem;
+}
+p {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+
+/* Header */
+
+.header {
+  background-image: url(./img/HeaderImage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+
+.header__searcher {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header__searcher img {
+  max-height: 10rem;
+}
+
+.header__searcher input {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Main */
+
+.body__infoLocation > h1 {
+  color: #0daabf;
+  font-weight: 900;
+  text-align: center;
+}
+
+.infoLocation__tittle {
+  text-align: center;
+}
+
+.container__infoLocation {
+  margin: 0 1.5rem;
+  border-radius: 4px;
+  background-color: var(--primarioOscuro);
+  max-width: 900px;
+}
+
+@media (min-width: 900px) {
+    .container__infoLocation {
+      margin: 0 auto;
+    }
+
+}
+
+.infoLocation__tittle h2 {
+  color: #ece49d;
+  padding: 2rem 0;
+}
+
+.infoLocation__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.infoLocation__info p span {
+  font-weight: bold;
+  color: #e4dc2c;
+}
+
+/* Container cards */
+
+.body__dataLocation {
+  margin: 2rem 1.5rem;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+    .body__dataLocation {
+      margin: 2rem auto;
+    }
+}
+
+/* Card styles */
+
+.cardCharacter {
+  width: 18rem;
+  background-color: var(--primarioOscuro);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cardCharacter figure {
+  margin: 0;
+  width: 100%;
+}
+
+.cardCharacter figure figcaption {
+  margin: 0 1rem;
+}
+
+.cardCharacter p {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.cardCharacter p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.cardCharacter .characterTittle {
+  margin-top: 1rem;
+  color: gray;
+}
