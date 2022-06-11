@@ -97,7 +97,9 @@ img {
   margin: 0 1.5rem;
   border-radius: 4px;
   background-color: var(--primarioOscuro);
-  max-width: 900px;
+  max-width: 900px;    
+  padding: 0 1rem;
+  text-align: center;
 }
 
 @media (min-width: 900px) {
