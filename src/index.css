@@ -145,10 +145,39 @@ img {
 /* Card styles */
 
 .cardCharacter {
+  position: relative;
   width: 18rem;
   background-color: var(--primarioOscuro);
   border-radius: 4px;
   overflow: hidden;
+}
+
+.containerStatus {
+  background-color: var(--primarioOscuro);
+  border-end-end-radius: 4px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  padding: 5px;
+  padding-right: 8px;
+}
+
+.containerStatus i.alive {
+  color: rgb(218, 10, 10);
+}
+
+.containerStatus i.dead {
+  color: rgb(10, 143, 10);
+}
+
+.containerStatus i.unknown {
+  color: gray;
+}
+
+.containerStatus p {
+  margin: 0;
 }
 
 .cardCharacter figure {
@@ -160,12 +189,12 @@ img {
   margin: 0 1rem;
 }
 
-.cardCharacter p {
+.cardCharacter > p {
   margin: 0 1rem;
   font-size: 1.5rem;
 }
 
-.cardCharacter p:last-of-type {
+.cardCharacter > p:last-of-type {
   margin-bottom: 1rem;
 }
 
