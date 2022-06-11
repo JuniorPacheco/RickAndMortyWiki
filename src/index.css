@@ -165,11 +165,11 @@ img {
 }
 
 .containerStatus i.alive {
-  color: rgb(218, 10, 10);
+  color: rgb(10, 143, 10);
 }
 
 .containerStatus i.dead {
-  color: rgb(10, 143, 10);
+  color: rgb(218, 10, 10);
 }
 
 .containerStatus i.unknown {
