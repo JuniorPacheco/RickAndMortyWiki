@@ -82,6 +82,9 @@ img {
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
+}
+
+.header__searcherContainer input::placeholder {
   text-align: center;
 }
 
@@ -235,4 +238,29 @@ img {
 .cardCharacter .characterTittle {
   margin-top: 1rem;
   color: gray;
+}
+
+/* Pagination */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.pagination article {
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination article.pageActive {
+  background-color: var(--primarioOscuro);
+}
+
+.pagination article:hover {
+  background-color: var(--primarioOscuro);
 }

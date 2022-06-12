@@ -1,7 +1,9 @@
-const Page = ({page, setPageNumber}) => {
-  console.log(typeof page)
+const Page = ({page, pageNumber, setPageNumber}) => {
   return (
-    <article onClick={() => setPageNumber(page)}>{page}</article>
+    <article 
+      className={`${pageNumber === page ? 'pageActive' : ''}`} 
+      onClick={() => setPageNumber(page)}
+    >{page}</article>
   )
 }
 

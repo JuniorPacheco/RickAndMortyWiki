@@ -20,15 +20,20 @@ const Header = ({nameLocation, setNameLocation, searchedLocations, handleSearche
             <img src={Name} alt='Text Rick And Morty' />
             <article className='header__searcherContainer'>
               <input 
-              className='inputSearch'
-              onFocus={() => setIsActiveInput(true)}
-              value={nameLocation}
-              placeholder='Searcher'
-              onChange={e => setNameLocation(e.target.value)}
-              type="text" 
+                className='inputSearch'
+                onFocus={() => setIsActiveInput(true)}
+                value={nameLocation}
+                placeholder='Dimension Searcher'
+                onChange={e => setNameLocation(e.target.value)}
+                type="text" 
               />
               <section className={`listSearch ${isActiveInput ? 'on' : 'off'}`}>
-                {searchedLocations.map(searchedLocation => <p key={searchedLocation?.url} onClick={() => handleSearchedLocation(searchedLocation?.url, searchedLocation.name)}>{searchedLocation.name}</p>)}
+                {searchedLocations.map(searchedLocation => (
+                  <p 
+                    key={searchedLocation?.url} 
+                    onClick={() => handleSearchedLocation(searchedLocation?.url, searchedLocation.name)}
+                  >{searchedLocation.name}</p>
+                ))}
               </section>
             </article>
         </section>
