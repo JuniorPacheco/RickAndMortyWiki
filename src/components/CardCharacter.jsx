@@ -2,11 +2,12 @@ import useCardData from "../hooks/useCardData"
 
 const CardCharacter = ({urlCharacter}) => {
     const character = useCardData(urlCharacter);
+    console.log(character)
   return (
     <article className="cardCharacter">
         <div className="containerStatus">
             <i 
-            className={`bx bxs-circle ${ character?.status === 'Dead' ? 'dead': character?.status === 'Alive' ? 'alive' : 'unknown'}`}
+            className={`bx bxs-circle ${ character?.status }`}
             />
             <p>{character?.status}</p>
         </div>

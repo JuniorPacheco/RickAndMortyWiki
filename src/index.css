@@ -201,11 +201,11 @@ img {
   padding-right: 8px;
 }
 
-.containerStatus i.alive {
+.containerStatus i.Alive {
   color: rgb(10, 143, 10);
 }
 
-.containerStatus i.dead {
+.containerStatus i.Dead {
   color: rgb(218, 10, 10);
 }
 
