@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Location from "./Location"
-import CardCharacter from "./CardCharacter";
-import Page from "./Page";
 import useCardsPagesLogic from "../hooks/useCardsPagesLogic";
 
 const Main = ({location}) => {
