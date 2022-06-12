@@ -9,7 +9,7 @@ const Main = ({location}) => {
   const [pageNumber, setPageNumber] = useState(1)
   const [pages, setPages] = useState([])
 
-  useCardsPagesLogic(location,setCards, pages, setPages, pageNumber, setPageNumber)
+  useCardsPagesLogic(location,setCards, setPages, pageNumber, setPageNumber)
  
   return (
     <main className='body'>

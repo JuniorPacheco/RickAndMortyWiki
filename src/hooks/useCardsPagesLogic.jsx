@@ -2,13 +2,20 @@ import { useEffect } from "react"
 import CardCharacter from "../components/CardCharacter";
 import Page from "../components/Page";
 
-const useCardsPagesLogic = (location, setCards, pages, setPages, pageNumber, setPageNumber) => {
+const useCardsPagesLogic = (location, setCards, setPages, pageNumber, setPageNumber) => {
     useEffect(() => {
         if(Object.keys(location).length !== 0){
             const arrayPages = []
             const pageAmount = Math.ceil(location?.residents.length / 20)
             for(let i = 1; i <= pageAmount; i++){
-              arrayPages.push(<Page key={i} page={i} pageNumber={pageNumber} setPageNumber={setPageNumber}/>)
+              arrayPages.push((
+                <Page 
+                  key={i} 
+                  page={i} 
+                  pageNumber={pageNumber} 
+                  setPageNumber={setPageNumber}
+                />
+              ))
             }
             setPages(arrayPages)
         }
