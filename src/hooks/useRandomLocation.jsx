@@ -12,11 +12,13 @@ const useRandomLocation = () => {
     useEffect(() => {
         const URL = `https://rickandmortyapi.com/api/location/${randomID()}`
         axios.get(URL)
-        .then(res => setLocation(res.data))
+        .then(res => {
+            setLocation(res.data)
+        })
         .catch(error => console.log(error, 'Another Error XD'))
     }, [])
 
-  return { location }
+  return { location, setLocation }
 }
 
 export default useRandomLocation

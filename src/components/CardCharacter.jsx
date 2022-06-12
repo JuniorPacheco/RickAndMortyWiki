@@ -5,7 +5,9 @@ const CardCharacter = ({urlCharacter}) => {
   return (
     <article className="cardCharacter">
         <div className="containerStatus">
-            <i className={`bx bxs-circle ${ character?.status === 'Dead' ? 'dead': character?.status === 'Alive' ? 'alive' : 'unknown'}`}></i>
+            <i 
+            className={`bx bxs-circle ${ character?.status === 'Dead' ? 'dead': character?.status === 'Alive' ? 'alive' : 'unknown'}`}
+            />
             <p>{character?.status}</p>
         </div>
         <figure>
