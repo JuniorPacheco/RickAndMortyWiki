@@ -24,7 +24,10 @@ const Header = ({nameLocation, setNameLocation, searchedLocations, handleSearche
                 onFocus={() => setIsActiveInput(true)}
                 value={nameLocation}
                 placeholder='Dimension Searcher'
-                onChange={e => setNameLocation(e.target.value)}
+                onChange={e => {
+                  setIsActiveInput(true)
+                  setNameLocation(e.target.value)
+                }}
                 type="text" 
               />
               <section className={`listSearch ${isActiveInput ? 'on' : 'off'}`}>
