@@ -1,8 +1,7 @@
 import useCardData from "../hooks/useCardData"
 
 const CardCharacter = ({urlCharacter}) => {
-    const character = useCardData(urlCharacter);
-    console.log(character)
+    const character = useCardData(urlCharacter)
   return (
     <article className="cardCharacter">
         <div className="containerStatus">
